@@ -6,6 +6,16 @@ public class Book {
     private String isbn;
     private boolean available = true;
 
+    public Book(String author, String title, String isbn){
+        this.author=author;
+        this.title=title;
+        this.isbn=isbn;
+
+    }
+    public Book(){
+
+    }
+
     public void printTitle() {
         System.out.println(title);
     }
@@ -39,24 +49,24 @@ public class Book {
     public void rentBook(){
 
         if (available){
-            System.out.println("You have rented the book" );
+            System.out.println("You have rented the book " + title );
             this.available=false;
         }else if (!available){
-            System.out.println("Book is not available for rent ");
+            System.out.println("Book is not available for rent " + title);
         }
     }
     // return system
     public void returnBook(){
         if(!available){
-            System.out.println("Book returned");
+            System.out.println("Book returned " + title);
             this.available=true;
         }else if(available){
-            System.out.println("Book was not rented");
+            System.out.println("Book was not rented " + title);
         }
     }
     //overriding the toString() method
     public String toString(){
-        return title + " "+ author + " "+ isbn + " "+ available;
+        return title + " "+ author + " "+ isbn ;
 
     }
 
