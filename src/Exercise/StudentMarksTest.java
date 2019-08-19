@@ -18,6 +18,7 @@ public class StudentMarksTest {
         st.getMarks(); // testing the new mark position
         System.out.println();
         System.out.println("The mean of the marks is: " + df.format(st.meanMarks()));
+        System.out.println("The position of the highest marks is: " + st.highestPos());
 
 
     }

@@ -40,5 +40,16 @@ public class StudentMarks {
         mean= sum/this.marks.length;
         return mean;
      }
+     public int highestPos(){
+        double high = this.marks[0];
+        int maxIndex=0;
+        for( int i = 0; i<this.marks.length; i++) {
+            if (this.marks[i] > high) {
+                high=this.marks[i];
+                maxIndex=i;
+            }
+        }
+        return maxIndex;
+     }
 
 }
