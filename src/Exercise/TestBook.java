@@ -1,4 +1,6 @@
-package Exercise;
+// class commented out due to new setting of the Book class as abstract
+/*package Exercise;
+
 
 public class TestBook {
     public static void main (String args[]){
@@ -37,3 +39,5 @@ public class TestBook {
 
     }
 }
+
+ */

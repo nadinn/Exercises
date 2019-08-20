@@ -1,6 +1,6 @@
 package Exercise;
 
-public class Book {
+public abstract class Book {
     protected String title;
     protected String author;
     protected String isbn;
@@ -69,6 +69,8 @@ public class Book {
         return title + " "+ author + " "+ isbn ;
 
     }
+    // abstract methods cannot have a body
+    public abstract void printAll();
 
 }
         

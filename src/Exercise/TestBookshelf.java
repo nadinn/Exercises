@@ -4,17 +4,18 @@ public class TestBookshelf {
     public static void main (String args[]){
         Bookshelf b1= new Bookshelf();
         //Bookshelf b2= new Bookshelf();
+        //Book mybook = new Book();
 
         // creating one Textbook
-        Textbook ts1 = new Textbook("a1", "textbook1", "i1", "p1");
+        Textbook ts1 = new Textbook("auth1", "textbook1", "i1", "publisher1");
         b1.addBook(ts1);
 
         // creating a Novel
-        Novel nv1= new Novel("a2","novel2", "i2", "l2","g2");
+        Novel nv1= new Novel("auth2","novel2", "i2", "language2","genre2");
         b1.addBook(nv1);
 
         // creating a ComicBook
-        ComicBook cb1 = new ComicBook("a3", "comicbook3", "i3", "il3");
+        ComicBook cb1 = new ComicBook("auth3", "comicbook3", "i3", "illustrator3");
         b1.addBook(cb1);
 
         //b1.addBook("a1","t1","i1");

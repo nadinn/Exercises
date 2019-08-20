@@ -23,4 +23,16 @@ public class ComicBook extends Book {
         System.out.println("Illustrator: " + illustrator);
     }
 
+    public String toString(){
+        return author+ " "+title+" " +illustrator;
+    }
+    //implemented due to abstract method in superclass Book
+    public void printAll(){
+        System.out.println("comic book author " + this.author);
+        System.out.println("title "+ this.title);
+        System.out.println("isbn "+ this.isbn);
+        System.out.println("language "+ this.illustrator);
+        System.out.println();
+    }
+
 }

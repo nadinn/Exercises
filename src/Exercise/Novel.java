@@ -36,6 +36,20 @@ public class Novel extends Book {
     public void printGenre() {
         System.out.println("Genre: " + genre);
     }
+
+    public String toString(){
+        return author+" "+title+" " +genre+" "+language;
+    }
+    //implemented due to abstract method in superclass Book
+    public void printAll(){
+        System.out.println("novel author " + this.author);
+        System.out.println("title "+ this.title);
+        System.out.println("isbn "+ this.isbn);
+        System.out.println("language "+ this.language);
+        System.out.println("genre "+ this.genre);
+        System.out.println();
+
+    }
 }
 
 

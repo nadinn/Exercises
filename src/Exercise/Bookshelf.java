@@ -23,7 +23,7 @@ public class Bookshelf {
     public void printBooks() {
         for (int i = 0; i < bookshelfArrayL.size(); i++) {
             Book book1 = this.bookshelfArrayL.get(i);
-            System.out.println(book1);
+            book1.printAll();
         }
     }
 
