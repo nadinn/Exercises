@@ -27,9 +27,9 @@ public class Bookshelf {
         }
     }
 
-    public void addBook(String author, String title, String isbn) {
+    public void addBook(Book book) {
         if (this.bookshelfArrayL.size() < this.size) {
-            Book book = new Book(author, title, isbn);
+
             this.bookshelfArrayL.add(book);
         } else {
             System.out.println("Bookshelf is full");

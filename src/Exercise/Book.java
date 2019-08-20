@@ -1,10 +1,10 @@
 package Exercise;
 
 public class Book {
-    private String title;
-    private String author;
-    private String isbn;
-    private boolean available = true;
+    protected String title;
+    protected String author;
+    protected String isbn;
+    protected boolean available = true;
 
     public Book(String author, String title, String isbn){
         this.author=author;
