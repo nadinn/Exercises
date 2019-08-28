@@ -2,6 +2,8 @@ package Exercise;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class DemoGui extends JFrame {
     private  JPanel mainPanel, buttonPanel;
@@ -12,8 +14,14 @@ public class DemoGui extends JFrame {
     public DemoGui(){
         this.setTitle("title of frame");
         field = new JTextField();
-        label = new JLabel("you typed");
+        label = new JLabel("You typed: ");
         button = new JButton("submit text");
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                label.setText("You typed: " + field.getText());
+            }
+        });
 
         mainPanel = new JPanel(new GridLayout(0,1));
         buttonPanel = new JPanel();
