@@ -11,7 +11,7 @@ public class EventListening extends JFrame {
     private int count ;
 
     public EventListening(){
-        
+
         myLabel = new JLabel("Total: " + count, JLabel.CENTER);
         myLabel.setPreferredSize(new Dimension(100,50));
         additionButton = new JButton("ADD");
