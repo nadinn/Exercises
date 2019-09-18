@@ -8,6 +8,12 @@ public class DeskPhoneTest {
         myPhone.dial(121212);
         myPhone.callPhone(121212);
         myPhone.answer();
+        System.out.println("---------------");
+        MobilePhone myMobilePhone = new MobilePhone(131313);
+        //myMobilePhone.powerOn();
+        myMobilePhone.callPhone(131313);
+        myMobilePhone.answer();
+
 
 
     }

@@ -13,7 +13,7 @@ public class DeskPhone implements ITelephone {
         return myNumber;
     }
 
-    // Overriding all the methods form the Interface
+    // Overriding all the methods from the Interface
     @Override
     public void powerOn() {
         System.out.println("Phone is turning on");

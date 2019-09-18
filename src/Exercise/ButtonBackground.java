@@ -50,6 +50,7 @@ public class ButtonBackground extends JFrame {
         });
 
         frame.add(panel);
+        panel.setSize(300, 150);
         frame.setVisible(true);
     }
 
