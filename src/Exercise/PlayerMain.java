@@ -6,16 +6,21 @@ import java.util.Scanner;
 
 public class PlayerMain {
     public static void main(String[] args) {
-        Player player1 = new Player("Mario",15,100);
-        System.out.println(player1.toString());
-        saveObject(player1);
+       ISaveable mario = new Player("Mario",15,100);
+        System.out.println(mario.toString());
+        saveObject(mario);
 
-        player1.setHitPoints(20);
-        System.out.println(player1.toString());
-        player1.setWeapon("axe");
-        saveObject(player1);
-        loadObject(player1);
-        System.out.println(player1);
+        ((Player)mario).setHitPoints(20); // casting mario as Player class to access methods from there
+        System.out.println(mario.toString());
+        ((Player)mario).setWeapon("Axe");
+        saveObject(mario);
+        //loadObject(mario);
+        System.out.println(mario);
+
+
+        Monster werewolf = new Monster("Werewolf", 13, 200);
+        System.out.println(werewolf);
+        saveObject(werewolf);
 
     }
 

@@ -16,6 +16,7 @@ public class Player implements ISaveable {
         this.weapon = "Sword";
     }
 
+    //getters
     public String getName() {
         return name;
     }
@@ -31,7 +32,7 @@ public class Player implements ISaveable {
     public String getWeapon() {
         return weapon;
     }
-
+    //setters
     public void setName(String name) {
         this.name = name;
     }
@@ -47,7 +48,7 @@ public class Player implements ISaveable {
     public void setWeapon(String weapon) {
         this.weapon = weapon;
     }
-
+    //override toString method to represent an Object
     @Override
     public String toString() {
         return "Player{" +
@@ -57,7 +58,7 @@ public class Player implements ISaveable {
                 ", weapon='" + weapon + '\'' +
                 '}';
     }
-
+    // override the methods from the interface
     @Override
     public List<String> write() {
         List<String> values = new ArrayList<String>();
